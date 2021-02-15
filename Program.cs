@@ -6,23 +6,13 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            int[] numeros = new int[100];
 
-            int x = 0;
-
-            for(int i = 0;i<100;i++)
-            {
-                x = i + 1;
-
-                numeros[i] = x;
-                
-            }
             
-            for(int i = 0;i<numeros.Length;i++)
+            for(int i = 1;i<=100;i++)
             {
 
-                int mod3 = (numeros[i] % 3);
-                int mod5 = (numeros[i] % 5);
+                int mod3 = (i % 3);
+                int mod5 = (i % 5);
 
                 if(mod3==0 && mod5==0)
                 {  
@@ -38,7 +28,7 @@ namespace FizzBuzz
                 }
                 else
                 {
-                    Console.WriteLine(numeros[i]);
+                    Console.WriteLine(i);
                 }
             }
         }
